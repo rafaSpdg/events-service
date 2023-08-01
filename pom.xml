@@ -14,7 +14,7 @@
 	<name>events-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<start-class>com.dolphinevents.eventservice.event.EventsServiceApplication</start-class>
+		<start-class>com.dolphinevents.eventservice.EventsServiceApplication</start-class>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
@@ -56,11 +56,19 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
+		</dependency> -->
+
+		<dependency>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+    		<version>42.5.4</version>
+			<scope>runtime</scope>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
